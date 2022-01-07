@@ -6,15 +6,231 @@
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <title> NARI Html Project </title> 
 
+<style type="text/css">
+table, th, td {
+	border: 1px solid navy;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 20px;
+}
+</style>
 </head>
 
 <body>
 memberForm.html
 
+<table>
+
+		<tr>
+			<td rowspan="4" width="300px"><input type="file" id="" name="" accept=".png,.jpg,jpeg"></td>
+			<th>아이디:			<input type="text" id="" name="Id" placeholder=""></th>
+			
+			<th>비밀번호:			<input type="password" id="" name="Password" placeholder="숫자,영어대소문사 포함 9~12자"></th>
+			
+		</tr>
+
+		<tr>
+
+			<th>이름:				<input type="text" id="" name="Name" placeholder="홍길동"></th>
+			
+			<th>생일:				<input type="date" id="" name="Birth" placeholder="000000"></th>
+			
+		</tr>
+
+		<tr>
+
+			<th>성별:				<input type="radio" id="" name="gender" value="man">남성
+								<input type="radio" id="" name="gender" value="woman" >여성</th>
+			
+			<th>국적:				<select id="" name="Nationality">
+						<option value="canada">캐나다
+						<option value="usa">미국
+						<option value="korea">대한민국
+					</select></th>
+			
+		</tr>
+
+		<tr>
+
+			<th>주소:				<input type="text" id="" name="Address" placeholder="현거주지"></th>
+			
+			<th>팩스:				<input type="text" id="" name="Fax" placeholder="000-0000-0000"></th>
+			
+		</tr>
+
+	</table>
+
+	<hr> 	
+	
+	
+	
+	
+	
+	
+	
+	
+	<table>
+
+		<tr>
+			<th>모바일:			<input type="text" id="" name="Mobile" placeholder="010-0000-0000"></th>
+		
+			<th>모바일 수신 동의:	<input type="checkbox" id="" name="Marketing_Mobile">동의
+					<input type="checkbox" id="" name="Marketing_Mobile">비동의</th>
+			
+		</tr>
+
+		<tr>
+			<th>이메일:			<input type="text" id="" name="Email" placeholder="">@<select id="" name="server">
+						<option value="Gmail">gmail.com
+						<option value="Naver">naver.com
+						<option value="Daum">hanmail.net
+					</select></th></th>
+			
+			<th>이메일 수신 동의:	<input type="checkbox" id="" name="Marketing_Email">동의
+					<input type="checkbox" id="" name="Marketing_Email">비동의</th>
+			
+		</tr>
+
+	</table>
+
+	<hr>
+	
+
+
+	<table>
+	
+		<tr>
+			<th>비밀번호 질문:	<select>
+				
+						<option>Question1</option>
+						<option>Question2</option>
+						<option>Question3</option>
+						<option>Question4</option>
+						<option>Question5</option>
+					</select></th>
+			
+			
+			
+			<th>비밀번호 답:	<input type="text" id="" name="A" placeholder=""></th>
+		
+		</tr>
+	
+		<tr>
+			<th>홈페이지:		<input type="text" id="" name="Homepage" placeholder=""></th>
+			
+			<th>SNS:		<input type="checkbox" id="" name="Facebook">페이스북
+					<input type="checkbox" id="" name="Instagram">인스타그램	
+					<input type="checkbox" id="" name="Twitter">트위터</th>
+			
+			
+			<th>추천인:<input type="text"	id="" name="" placeholder=""></th>
+			
+		</tr>
+	</table>
+	
+<hr>
+	
+	
+	<table>		
+		<tr>
+			<th>직업:<input type="text"	id="" name="Job" placeholder=""></th>
+			
+			<th>취미:<input type="text"	id="" name="Hobby" placeholder=""></th>
+			
+			
+			<th>좋아하는 색깔:<input type="color" id="" name="FavColor" placeholder=""></th>
+			
+		</tr>
+	</table>
+	
+<hr>
+	
+	<br>
+
+	<h5>프로젝트 참여</h5>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>프로젝트명</th>
+			<th>참여기간</th>
+			<th>역할</th>
+			<th>발주사</th>
+		</tr>
+
+		<tr>
+			<th>1</th>
+			<td><input type="text" id="" name="" placeholder=""></td>
+			<td><input type="month" id="" name="month">~<input type="month" id="" name="month"></td>
+			<th><input type="text" id="" name="" placeholder=""></th>
+			<td><input type="text" id="" name="" placeholder=""></td>
+		</tr>
+
+		<tr>
+			<th>2</th>
+			<td><input type="text" id="" name="" placeholder=""></td>
+			<td><input type="month" id="" name="month">~<input type="month" id="" name="month"></td>
+			<th><input type="text" id="" name="" placeholder=""></th>
+			<td><input type="text" id="" name="" placeholder=" "></td>
+		</tr>
+
+		<tr>
+			<th>3</th>
+			<td><input type="text" id="" name="" placeholder=""></td>
+			<td><input type="month" id="" name="month">~<input type="month" id="" name="month"></td>
+			<th><input type="text" id="" name="" placeholder=""></th>
+			<td><input type="text" id="" name="" placeholder=""></td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<table>
+		<tr>
+			<th>결혼여부:	<select>
+				
+						<option>미혼</option>
+						<option>기혼</option>
+						
+					</select></th>
+				
+			<th>결혼기념일:<input type="date" id="" name="Anniversary" placeholder=""></th>
+			
+			<th>자녀유무:	<select>
+				
+						<option>유</option>
+						<option>무</option>
+					
+					</select></th>
+			
+		</tr>
+	</table>
+
+	<hr>
+
+	<h5>자기소개</h5>
+	<table>
+		<tr>
+			<td>안녕하세요. 저는 김나나입니다. 나이는 스무살이고 태어난 곳은 캐나다입니다. 하지만 국적은 한국이고 현재
+				거주하는 곳은 뉴욕입니다. 그리고 직업은 엔지니어입니다. 잘부탁드립니다.</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<table>
+		<tr>
+			<th>개인정보 유효기간:<input type="radio" id="" name="PersonalData" value="1yr">1년
+								<input type="radio" id="" name="PersonalData" value="3yrs">3년
+								<input type="radio" id="" name="PersonalData" value="5yrs">5년
+								<input type="radio" id="" name="PersonalData" value="10yrs">10년</th>
+			
+	</tr>
+</table>
 
 
 
-</form>
 
 
 </body>
