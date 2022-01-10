@@ -99,7 +99,7 @@ th, td {
 			<th>비밀번호 질문:	<select>
 				
 						<option>Question1</option>
-						<option>Question2</option>
+						<option selected>Question2</option>
 						<option>Question3</option>
 						<option>Question4</option>
 						<option>Question5</option>
@@ -184,17 +184,19 @@ th, td {
 		<tr>
 			<th>결혼여부:	<select>
 				
-						<option>미혼</option>
-						<option>기혼</option>
+						<option value="Single" selected>미혼</option>
+						<option value="Marriged">기혼</option>
 						
 					</select></th>
 				
-			<th>결혼기념일:<input type="date" id="" name="Anniversary" value="2022-01-01"></th>
+			<th>결혼기념일:<input type="date" id="" name="Anniversary" value="2022-01-01">
+						<input type="checkbox" id="" name="Single" checked>해당없음
+			</th>
 			
 			<th>자녀유무:	<select>
 				
-						<option>유</option>
-						<option>무</option>
+						<option value="Child">유</option>
+						<option value="NoChild" selected>무</option>
 					
 					</select></th>
 			
@@ -207,7 +209,7 @@ th, td {
 	<table>
 		<tr>
 			<td><textarea id="" name="textarea" rows="4" cols="100">안녕하세요. 저는 김나나입니다. 나이는 스무살이고 태어난 곳은 캐나다입니다. 하지만 국적은 한국이고 현재
-				거주하는 곳은 뉴욕입니다. 그리고 직업은 엔지니어입니다. 잘부탁드립니다.</textarea></td>
+ 거주하는 곳은 뉴욕입니다. 그리고 직업은 엔지니어입니다. 잘부탁드립니다.</textarea></td>
 		</tr>
 	</table>
 
@@ -216,8 +218,8 @@ th, td {
 	<table>
 		<tr>
 			<th>개인정보 유효기간:<input type="radio" id="" name="PersonalData" value="1yr">1년
-								<input type="radio" id="" name="PersonalData" value="3yrs" checked>3년
-								<input type="radio" id="" name="PersonalData" value="5yrs" checked>5년
+								<input type="radio" id="" name="PersonalData" value="3yrs">3년
+								<input type="radio" id="" name="PersonalData" value="5yrs">5년
 								<input type="radio" id="" name="PersonalData" value="10yrs" checked>10년</th>
 			
 	</tr>
