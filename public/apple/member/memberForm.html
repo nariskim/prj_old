@@ -20,17 +20,19 @@ th, td {
 
 <body>
 memberForm.html
-	<ul>
-		<li><a href="../index.html">처음으로</a></li>
-		<li><a href="./memberList.html">멤버리스트</a>
-	</ul>
+	<form action="" method="post" id="" name="" enctype="multipart/form-data">
+
+
+
+<br><hr><br>
+
 <table>
 
 		<tr>
 			<td rowspan="4" width="300px"><input type="file" id="" name="" accept=".png,.jpg,jpeg"></td>
 			<th>아이디:			<input type="text" id="" name="Id" placeholder=""></th>
 			
-			<th>비밀번호:			<input type="password" id="" name="Password" placeholder="숫자,영어대소문사 포함 9~12자"></th>
+			<th>비밀번호:			<input type="password" id="" name="Password" placeholder="숫자+영대소문자 9~12자"></th>
 			
 		</tr>
 
@@ -48,9 +50,10 @@ memberForm.html
 								<input type="radio" id="" name="gender" value="woman" >여성</th>
 			
 			<th>국적:				<select id="" name="Nationality">
+						<option value="korea">대한민국
 						<option value="canada">캐나다
 						<option value="usa">미국
-						<option value="korea">대한민국
+						
 					</select></th>
 			
 		</tr>
@@ -65,7 +68,7 @@ memberForm.html
 
 	</table>
 
-	<hr> 	
+	<br><hr><br> 	
 	
 	
 	
@@ -77,7 +80,13 @@ memberForm.html
 	<table>
 
 		<tr>
-			<th>모바일:			<input type="text" id="" name="Mobile" placeholder="010-0000-0000"></th>
+			<th>모바일:<select>
+						<option>(SKT)</option>
+						<option>(KT)</option>
+						<option>(Uplus)</option>
+						<option>(알뜰폰)</option>
+					</select>			
+					<input type="text" id="" name="Mobile" placeholder="010-0000-0000"></th>
 		
 			<th>모바일 수신 동의:	<input type="checkbox" id="" name="Marketing_Mobile">동의
 					<input type="checkbox" id="" name="Marketing_Mobile">비동의</th>
@@ -98,14 +107,14 @@ memberForm.html
 
 	</table>
 
-	<hr>
+	<br><hr><br>
 	
 
 
 	<table>
 	
 		<tr>
-			<th>비밀번호 질문:	<select>
+			<th colspan="2">비밀번호 질문:	<select>
 				
 						<option>Question1</option>
 						<option>Question2</option>
@@ -123,9 +132,15 @@ memberForm.html
 		<tr>
 			<th>홈페이지:		<input type="text" id="" name="Homepage" placeholder=""></th>
 			
-			<th>SNS:		<input type="checkbox" id="" name="Facebook">페이스북
-					<input type="checkbox" id="" name="Instagram">인스타그램	
-					<input type="checkbox" id="" name="Twitter">트위터</th>
+			<th>SNS:		
+					<select>
+						<option>X</option>
+						<option>인스타그램</option>
+						<option>페이스북</option>
+						<option>트위터</option>
+					</select>
+					<input type="url" id="" name="url"></th>
+						
 			
 			
 			<th>추천인:<input type="text"	id="" name="" placeholder=""></th>
@@ -133,26 +148,48 @@ memberForm.html
 		</tr>
 	</table>
 	
-<hr>
+<br><hr><br>
 	
 	
 	<table>		
 		<tr>
 			<th>직업:<input type="text"	id="" name="Job" placeholder=""></th>
 			
-			<th>취미:<input type="text"	id="" name="Hobby" placeholder=""></th>
-			
+			<th>취미(최소3개):<input type="checkbox" id="" name="Hobby">수집
+					<input type="checkbox" id="" name="Hobby">인테리어
+					<input type="checkbox" id="" name="Hobby">재테크
+					<input type="checkbox" id="" name="Hobby">사진촬영
+					<input type="checkbox" id="" name="Hobby">골프
+					<input type="checkbox" id="" name="Hobby">공예
+					<input type="checkbox" id="" name="Hobby">스킨스쿠버
+					<br><input type="checkbox" id="" name="Hobby">베이킹
+					<input type="checkbox" id="" name="Hobby">요리
+					<input type="checkbox" id="" name="Hobby">악기연주
+					<input type="checkbox" id="" name="Hobby">핸드드립
+					<input type="checkbox" id="" name="Hobby">꽃꽃이
+					<input type="checkbox" id="" name="Hobby">그림
+					<input type="checkbox" id="" name="Hobby">와인
+					<input type="checkbox" id="" name="Hobby">식물기르기
+					<br><input type="checkbox" id="" name="Hobby">영화보기
+					<input type="checkbox" id="" name="Hobby">드라이브
+					<input type="checkbox" id="" name="Hobby">캠핑
+					<input type="checkbox" id="" name="Hobby">요가
+					<input type="checkbox" id="" name="Hobby">유튜브제작
+					<input type="checkbox" id="" name="Hobby">바이크
+					<input type="checkbox" id="" name="Hobby">테니스
+					<input type="checkbox" id="" name="Hobby">등산
+			</th>
 			
 			<th>좋아하는 색깔:<input type="color" id="" name="FavColor" placeholder=""></th>
 			
 		</tr>
 	</table>
 	
-<hr>
+<br><hr><br>
 	
-	<br>
+	
 
-	<h5>프로젝트 참여</h5>
+	<h2>프로젝트 참여</h2>
 	<table>
 		<tr>
 			<th>번호</th>
@@ -187,39 +224,40 @@ memberForm.html
 		</tr>
 	</table>
 
-	<hr>
+	<br><hr><br>
 
 	<table>
 		<tr>
 			<th>결혼여부:	<select>
 				
-						<option>미혼</option>
-						<option>기혼</option>
+						<option value="Single">미혼</option>
+						<option value="Married">기혼</option>
 						
 					</select></th>
 				
-			<th>결혼기념일:<input type="date" id="" name="Anniversary" placeholder=""></th>
+			<th>결혼기념일:<input type="date" id="" name="Anniversary" placeholder="">
+			<input type="checkbox" id="" name="Single">해당없음</th>
 			
 			<th>자녀유무:	<select>
 				
-						<option>유</option>
-						<option>무</option>
+						<option value="Child">유</option>
+						<option value="Nochild" selected>무</option>
 					
 					</select></th>
 			
 		</tr>
 	</table>
 
-	<hr>
+	<br><hr><br>
 
-	<h5>자기소개</h5>
+	<h2>자기소개</h2>
 	<table>
 		<tr>
 			<td><textarea id="" name="textarea" rows="4" cols="100"></textarea></td>
 		</tr>
 	</table>
 
-	<hr>
+	<br><hr><br>
 
 	<table>
 		<tr>
@@ -231,9 +269,16 @@ memberForm.html
 	</tr>
 </table>
 
+	<br><input type="button" value="제출" onclick="here();">
 
+</form>
 
+<br><hr><br>
 
+	<ul>
+		<!-- <li><a href="../index.html">메인</a></li> -->
+		<li><a href="./memberList.html">목록</a>
+	</ul>
 
 </body>
 

@@ -18,7 +18,12 @@ th, td {
 </head>
 
 <body>
-	memberView.html	<a href="./memberList.html">멤버리스트</a>
+	memberEdit.html	
+	
+
+<br><hr><br>
+
+<form action="" method="post" id="" name="" enctype="multipart/form-data">
 	<table>
 
 		<tr>
@@ -60,7 +65,7 @@ th, td {
 
 	</table>
 
-	<hr> 	
+	<br><hr><br> 	
 	
 	
 	
@@ -72,7 +77,13 @@ th, td {
 	<table>
 
 		<tr>
-			<th>모바일:			<input type="text" id="" name="Mobile" value="010-3333-3333" autofocus="autofocus"></th>
+			<th>모바일:<select>
+						<option selected>SKT</option>
+						<option>KT</option>
+						<option>Uplus</option>
+						<option>알뜰폰</option>
+					</select>
+					<input type="text" id="" name="Mobile" value="010-3333-3333" autofocus="autofocus"></th>
 		
 			<th>모바일 수신 동의:	<input type="checkbox" id="" name="Marketing_Mobile" checked>동의
 					<input type="checkbox" id="" name="">비동의</th>
@@ -89,14 +100,14 @@ th, td {
 
 	</table>
 
-	<hr>
+	<br><hr><br>
 	
 
 
 	<table>
 	
 		<tr>
-			<th>비밀번호 질문:	<select>
+			<th colspan="2">비밀번호 질문:	<select>
 				
 						<option>Question1</option>
 						<option selected>Question2</option>
@@ -112,11 +123,15 @@ th, td {
 		</tr>
 	
 		<tr>
-			<th>홈페이지:		<input type="text" id="" name="Homepage" value="http://www.naver.com/" autofocus="autofocus"></th>
+			<th>홈페이지:		<input type="url" id="" name="HP" value="https://www.naver.com/" autofocus="autofocus"></th>
 			
-			<th>SNS:		<input type="checkbox" id="" name="Facebook" >페이스북
-					<input type="checkbox" id="" name="Instagram" checked>인스타그램	
-					<input type="checkbox" id="" name="Twitter">트위터</th>
+			<th>SNS:		<select>
+						<option>X</option>
+						<option selected>인스타그램</option>
+						<option>페이스북</option>
+						<option>트위터</option>
+					</select>
+					<input type="url" id="" name="url" value="https://www.instagram.com/"></th>
 			
 			
 			<th>추천인:<input type="text"	id="" name="" value="라이언" autofocus="autofocus"></th>
@@ -124,26 +139,48 @@ th, td {
 		</tr>
 	</table>
 	
-<hr>
+<br><hr><br>
 	
 	
 	<table>		
 		<tr>
 			<th>직업:<input type="text"	id="" name="Job" value="엔지니어" autofocus="autofocus"></th>
 			
-			<th>취미:<input type="text"	id="" name="Hobby" value="등산, 영화감상" autofocus="autofocus"></th>
-			
+			<th>취미(최소3개):<input type="checkbox" id="" name="Hobby">수집
+					<input type="checkbox" id="" name="Hobby">인테리어
+					<input type="checkbox" id="" name="Hobby">재테크
+					<input type="checkbox" id="" name="Hobby">사진촬영
+					<input type="checkbox" id="" name="Hobby">골프
+					<input type="checkbox" id="" name="Hobby">공예
+					<input type="checkbox" id="" name="Hobby">스킨스쿠버
+					<br><input type="checkbox" id="" name="Hobby">베이킹
+					<input type="checkbox" id="" name="Hobby">요리
+					<input type="checkbox" id="" name="Hobby">악기연주
+					<input type="checkbox" id="" name="Hobby">핸드드립
+					<input type="checkbox" id="" name="Hobby">꽃꽃이
+					<input type="checkbox" id="" name="Hobby">그림
+					<input type="checkbox" id="" name="Hobby">와인
+					<input type="checkbox" id="" name="Hobby">식물기르기
+					<br><input type="checkbox" id="" name="Hobby">영화보기
+					<input type="checkbox" id="" name="Hobby" checked>드라이브
+					<input type="checkbox" id="" name="Hobby" checked>캠핑
+					<input type="checkbox" id="" name="Hobby">요가
+					<input type="checkbox" id="" name="Hobby">유튜브제작
+					<input type="checkbox" id="" name="Hobby">바이크
+					<input type="checkbox" id="" name="Hobby">테니스
+					<input type="checkbox" id="" name="Hobby" checked>등산
+			</th>
 			
 			<th>좋아하는 색깔:<input type="color" id="" name="FavColor" value="#FF8200"></th>
 			
 		</tr>
 	</table>
 	
-<hr>
+<br><hr><br>
 	
-	<br>
+	
 
-	<h5>프로젝트 참여</h5>
+	<h2>프로젝트 참여</h2>
 	<table>
 		<tr>
 			<th>번호</th>
@@ -178,14 +215,14 @@ th, td {
 		</tr>
 	</table>
 
-	<hr>
+	<br><hr><br>
 
 	<table>
 		<tr>
 			<th>결혼여부:	<select>
 				
 						<option value="Single" selected>미혼</option>
-						<option value="Marriged">기혼</option>
+						<option value="Married">기혼</option>
 						
 					</select></th>
 				
@@ -203,9 +240,9 @@ th, td {
 		</tr>
 	</table>
 
-	<hr>
+	<br><hr><br>
 
-	<h5>자기소개</h5>
+	<h2>자기소개</h2>
 	<table>
 		<tr>
 			<td><textarea id="" name="textarea" rows="4" cols="100">안녕하세요. 저는 김나나입니다. 나이는 스무살이고 태어난 곳은 캐나다입니다. 하지만 국적은 한국이고 현재
@@ -213,7 +250,7 @@ th, td {
 		</tr>
 	</table>
 
-	<hr>
+	<br><hr><br>
 
 	<table>
 		<tr>
@@ -223,7 +260,21 @@ th, td {
 								<input type="radio" id="" name="PersonalData" value="10yrs" checked>10년</th>
 			
 	</tr>
+	
 </table>
+	
+	<br><input type="button" value="제출" onclick="here();">
+
+</form>
+
+<br><hr><br>
+
+<ul>
+		<!-- <li><a href="../index.html">메인으로</a></li> -->
+		<li><a href="./memberList.html">목록</a></li>
+		
+	</ul>
+
 </body>
 
 </html>
