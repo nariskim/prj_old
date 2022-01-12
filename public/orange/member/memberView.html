@@ -6,22 +6,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> NARI Html Project </title>
 <style type="text/css">
-table, th, td {
-	border: 1px solid navy;
-	border-collapse: collapse;
+	table {
+		background-color: mediumslateblue;
+		border: dotted darkslateblue;
+		border-width: 8px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1000px;
+		table-layout: auto;
+		
+	}
+	
+	tr, td, th {
+		background-color: snow;
+		color: black;
+		border: outset slateblue;	
+		border-width:3px;
+		border-collapse: collapse;
+		text-align: center;
+		height: 60px;
+		vertical-align: center;
+		
+	}
+	body, input, textarea {
+    font-family: 돋움;
 }
-
-th, td {
-	padding: 20px;
-}
+		ul, li{
+			font-family: '맑은 고딕';
+			font-size: 20px;
+			display: table;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		a{
+			font-family: '맑은 고딕';
+			font-size: 20px;
+			display: table;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.classw{
+			color: white;
+			font-size: 25px;
+		}
+		.classm{
+			color: midnight;
+			font-size: 15px;
+		}
 </style>
 </head>
-<body style="background-image: url(../images/veriperi.png); background-size: cover;">
+<body style="background-image: url(../images/milkyway.jpg);">
 <body>
-	memberView.html	
+<p style="text-align: center; color: white;">memberView.html</p>
 	
 	
-	<br><hr><br>
+<br><br><br><br>
 	
 	<table>
 
@@ -59,7 +98,7 @@ th, td {
 
 	</table>
 
-	<br><hr><br>
+<br><br><br><br>
 
 	<table>
 
@@ -83,7 +122,7 @@ th, td {
 
 	</table>
 
-	<br><hr><br>
+<br><br><br><br>
 
 
 	<table>
@@ -98,16 +137,16 @@ th, td {
 	
 		<tr>
 			<th>홈페이지</th>
-				<td><a href="https://www.naver.com/">https://www.naver.com/</a></td>
+				<td><a class="classm"  href="https://www.naver.com/">https://www.naver.com/</a></td>
 			
 			<th>SNS</th>
-				<td colspan="2">인스타그램<br><a href="https://www.instagram.com/">https://www.instagram.com/</a></td>
+				<td colspan="2">인스타그램<br><a class="classm"  href="https://www.instagram.com/">https://www.instagram.com/</a></td>
 			<th>추천인</th>
 				<td>라이언</td>
 		</tr>
 	</table>
 	
-<br><hr><br>
+<br><br><br><br>
 	
 	<table>		
 		<tr>
@@ -121,9 +160,9 @@ th, td {
 		</tr>
 	</table>
 	
-<br><hr><br>
+<br><br><br><br>
 
-	<h2>프로젝트 참여</h2>
+	<h2 style="text-align: center; color: white;">프로젝트 참여</h2>
 	<table>
 		<tr>
 			<th>번호</th>
@@ -158,7 +197,7 @@ th, td {
 		</tr>
 	</table>
 
-	<br><hr><br>
+<br><br><br><br>
 
 	<table>
 		<tr>
@@ -171,9 +210,9 @@ th, td {
 		</tr>
 	</table>
 
-	<br><hr><br>
+<br><br><br><br>
 
-	<h2>자기소개</h2>
+	<h2 style="text-align: center; color: white;">자기소개</h2>
 	<table>
 		<tr>
 			<td>안녕하세요. 저는 김나나입니다. 나이는 스무살이고 태어난 곳은 캐나다입니다. 하지만 국적은 한국이고 현재
@@ -181,7 +220,7 @@ th, td {
 		</tr>
 	</table>
 
-	<br><hr><br>
+<br><br><br><br>
 
 	<table>
 		<tr>
@@ -192,13 +231,12 @@ th, td {
 	</tr>
 </table>
 
-<br><hr><br>
+<br><br><br><br>
 
-<ul>
-		<!-- <li><a href="../index.html">메인</a></li> -->
-		<li><a href="./memberList.html">목록</a></li>
-		<li><a href="./memberEdit.html">수정</a></li>
-		<li><a href="./memberList.html">삭제</a>
+	<ul >
+		<li><a class="classw" href="./memberList.html">목록</a></li>
+		<li><a class="classw"  href="./memberEdit.html">수정</a></li>
+		<li><a class="classw"  href="./memberList.html">삭제</a>
 	</ul>
 
 </body>

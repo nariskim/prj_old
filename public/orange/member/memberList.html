@@ -5,15 +5,63 @@
 <meta charset = "uTF-8">
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <title> NARI Html Project </title> 
-
-</head>
-<body style="background-image: url(../images/veriperi.png); background-size: cover;">
-<body>
-memberList.html
-
-<br><hr><br>	
+<style type="text/css">
+	table {
+		background-color: mediumslateblue;
+		border: dotted darkslateblue;
+		border-width: 8px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1000px;
+		table-layout: auto;
+		
+	}
 	
-<table border="1">
+	tr, td, th {
+		background-color: snow;
+		color: black;
+		border: outset slateblue;	
+		border-width:3px;
+		border-collapse: collapse;
+		text-align: center;
+		height: 60px;
+		vertical-align: center;
+		
+	}
+	body, input, textarea {
+    font-family: 돋움;
+}
+		ul, li{
+			font-family: '맑은 고딕';
+			font-size: 20px;
+			display: table;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		a{
+			font-family: '맑은 고딕';
+			font-size: 20px;
+			display: table;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.classw{
+			color: white;
+			font-size: 25px;
+		}
+		.classm{
+			color: midnight;
+			font-size: 15px;
+		}
+</style>
+</head>
+<body style="background-image: url(../images/milkyway.jpg);">
+<body>
+<p style="text-align: center; color: white;">memberList.html</p>
+
+<br><br><br><br>	
+	
+<table>
  	<tr>
  		 		
 		 <th>회원번호</th>
@@ -32,8 +80,8 @@ memberList.html
 		<td>여</td>
 		<td>01033333333</td>
 		<td>rhdee@naver.com</td>
-		<th><a href="./memberView.html">더보기</a></th>
-		<th><a href="./memberEdit.html">정보수정</a></th>
+		<th><a class="classm" href="./memberView.html">더보기</a></th>
+		<th><a class="classm" href="./memberEdit.html">정보수정</a></th>
 	</tr>
 	<tr>
 		<th>2</th>
@@ -42,8 +90,8 @@ memberList.html
 		<td>남</td>
 		<td>01065487892</td>
 		<td>qwerty@naver.com</td>
-		<th><a href="">더보기</a></th>
-		<th><a href="">정보수정</a></th>
+		<th><a class="classm" href="">더보기</a></th>
+		<th><a class="classm" href="">정보수정</a></th>
 	</tr>
 	<tr>
 		<th>3</th>
@@ -52,8 +100,8 @@ memberList.html
 		<td>남</td>
 		<td>01048263791</td>
 		<td>zxcv1234@naver.com</td>
-		<th><a href="">더보기</a></th>
-		<th><a href="">정보수정</a></th>
+		<th><a class="classm" href="">더보기</a></th>
+		<th><a class="classm" href="">정보수정</a></th>
 	</tr>
 	<tr>
 		<th>4</th>
@@ -72,16 +120,15 @@ memberList.html
 		<td>여</td>
 		<td>01098562903</td>
 		<td>poppyriri@naver.com</td>
-		<th><a href="">더보기</a></th>
-		<th><a href="">정보수정</a></th>
+		<th><a class="classm" href="">더보기</a></th>
+		<th><a class="classm" href="">정보수정</a></th>
 	</tr>
 
 
 </table>
 
-<ul>
-		<!-- <li><a href="../index.html">메인</a></li> -->
-		<li><a href="./memberForm.html">등록</a></li>
+	<ul>
+		<li><a class="classw" href="./memberForm.html">등록</a></li>
 		
 	</ul>
 	
