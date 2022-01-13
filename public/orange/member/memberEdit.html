@@ -8,11 +8,11 @@
 <style type="text/css">
 	table {
 		background-color: mediumslateblue;
-		border: dotted darkslateblue;
+		border: dotted snow;
 		border-width: 8px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 1000px;
+		width: 900px;
 		table-layout: auto;
 		
 	}
@@ -29,8 +29,8 @@
 		
 	}
 	body, input, textarea {
-    font-family: 돋움;
-}
+    	font-family: 돋움;
+	}
 		ul, li{
 			font-family: '맑은 고딕';
 			font-size: 20px;
@@ -39,19 +39,25 @@
 			margin-right: auto;
 		}
 		a{
+			
 			font-family: '맑은 고딕';
 			font-size: 20px;
 			display: table;
 			margin-left: auto;
 			margin-right: auto;
+			
 		}
 		.classw{
 			color: white;
 			font-size: 25px;
+			text-decoration-color : red;
+			text-decoration-style : wavy;
 		}
 		.classm{
-			color: midnight;
+			color:  #4646cd;
 			font-size: 15px;
+			text-decoration-color : slateblue;
+			text-decoration-style : dotted;
 		}
 </style>
 
@@ -67,7 +73,7 @@
 	<table>
 
 		<tr>
-			<td rowspan="4"><img src="./puppy.jpg" width="300px"></td>
+			<td style="background-image: url(../images/milkyway.jpg);" rowspan="4"><img src="../images/astro.jpg" width="300px"></td>
 			<th>아이디:			<input type="text" id="" name="Id" value="rhdeee" autofocus="autofocus"></th>
 			
 			<th>비밀번호:			<input type="password" id="" name="Password" value="*********"></th>
@@ -309,10 +315,10 @@
 
 <br><br><br><br>
 
-<ul>
+	<ul>
 	
-		<li><a class="classw" href="./memberList.html">목록</a></li>
-		<li><a class="classw" href="./memberView.html">수정</a></li>
+		<li><a class="classw" href="./memberList.html">* 목록 *</a></li>
+		<li><a class="classw" href="./memberView.html">* 수정 *</a></li>
 		
 	</ul>
 
