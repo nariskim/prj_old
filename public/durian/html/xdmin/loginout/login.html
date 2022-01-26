@@ -9,38 +9,65 @@
 <style type="text/css">
 	.container {
 		justify-content: center;
+		width: 75%;
+	
+	}
+	
+	#logo {
+		
+		
+		float:right;
 		
 	}
+
+	.aaa {
+		
+		
+		float:left;
+		font-size:small;
+	}	
+	#bbb {
+		text-align: center;
+		font-size:small;
+		clear: both;
+	}
+
+
 </style>
 <body>
 <form action="" method="post" id="" name="" enctype="multipart/form-data">
 <!--  -->
+<br><br>
+<div style="text-align:center;">
+<img src="../../../images/oy_lg.jpg" alt="..." width="200px"></div>
 <div class="container">
-<div class="form-floating mb-3 text-info">
+<div class="form-floating mb-3" style="font-size: small;">
   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">Email address</label>
+  <label for="floatingInput">CJ ONE 통합회원 아이디 입력</label>
 </div>
-<div class="form-floating mb-3 text-info">
+<div class="form-floating mb-3" style="font-size: small;">
   <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
+  <label for="floatingPassword">비밀번호(8-12자 영문자+숫자+특수문자)</label>
   </div>
- 
-   
-   <div class="d-grid gap-2 rows-4">
-   <button class="btn btn-info text-white col-6" type="button">로그인</button>
-    <button class="btn btn-info text-white col-6" type="button">회원가입</button>
-
-  <button class="btn btn-info text-white col-6" type="button">아이디찾기</button>
-  <button class="btn btn-info text-white col-6" type="button">비밀번호찾기</button>
-  </div>
+	<div class="input-group" style="text-align:left;" style="font-size: small;">
+	<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 자동로그인 </label></div>
+			<div class="form-check">
+			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 아이디 저장 </label></div>
+   </div><br>
+   <div class="d-grid gap-2">
+   <button class="btn btn-success text-white" type="button">로그인</button>
+   </div>
   
-  <br>
-<div class="d-grid gap-2">
-  <button class="btn btn-outline-success" type="button">네이버 간편로그인</button>
-  <button class="btn btn-outline-warning " type="button">카카오 간편로그인</button>
-  <button class="btn btn-outline-primary" type="button">페이스북 간편로그인</button>
-  <button class="btn btn-outline-danger" type="button">구글 간편로그인</button>
- 
+  <br><br>
+<div class="d-flex justify-content-between"><div class="input-group"><p> 카카오/애플로 올리브영<br>
+  간편하게 시작하기</p></div>
+  <div id="logo" class="input-group">
+  <a href=""><img src="../../../images/kako.png"></a>
+  <a href=""><img src="../../../images/aple.png"></a></div></div>
+<br><br>
+<div class="input-group" id="bbb">
+<a style="text-decoration:none; color:gray;" href="">아이디 찾기 |</a><a style="text-decoration:none; color:gray;" href="">&nbsp;비밀번호 찾기</a>
 </div>
 </div>
 
