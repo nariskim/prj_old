@@ -3,9 +3,11 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-<style type="text/css">
+<link
+	href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+	rel="stylesheet">
 
+<style type="text/css">
 .table-wrapper {
 	overflow: auto;
 }
@@ -20,411 +22,762 @@
 	width: auto;
 	height: auto;
 	color: black;
-	
 }
 
-	
-	label {
-		font-size: large;
-		font-variant: small-caps;
-		font-family: '맑은 고딕';
-		padding: 10px;
-	}
-
-		
+label {
+	font-size: large;
+	font-variant: small-caps;
+	font-family: '맑은 고딕';
+	padding: 10px;
+}
 </style>
 <title>DurianForm</title>
 </head>
 <body>
-<form action="" method="post" id="" name="" enctype="multipart/form-data">
-			<form action="" method="post" id="" name=""
+	<form action="" method="post" id="" name=""
 		enctype="multipart/form-data">
+
 		<!--  -->
 
 		<img src="../../../images/xdmin/oy_lg2.jpg" width="390px">
-		
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <div style = "text-align:right;"><div class = "input-group">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </div></div>
-    </div>
-  </div>
-</nav>
-	<div class="container">
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Name</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="" placeholder="이름"></div>	
-			
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">ID</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="" placeholder="아이디"></div>
-		
-		</div>
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">SNS</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><select class="form-select" aria-label="Default select example">
-			<option selected>선택해주세요</option>
-			<option>X</option>
-			<option>인스타그램</option>
-			<option>페이스북</option>
-			<option>트위터</option>
-			</select></div>
-			
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">SNS URL</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="sns_url" placeholder="주소를 입력해주세요"></div>
-		
-		</div>
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Password</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="password" id="" class="form-control" aria-describedby="passwordHelpBlock" placeholder="비밀번호">
-			<div id="passwordHelpBlock" class="form-text">8-20자리의 영문 대소문자, 숫자, 특수문자를 조합하여 설정</div></div>
-			
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Confirm Password</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="password" id="" class="form-control" aria-describedby="passwordHelpBlock" placeholder="비밀번호 확인">
-			<div id="passwordHelpBlock" class="form-text"></div></div>
-		
-		</div>
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Password Hint Question</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><div class="mb-3">
-			<select class="form-select" aria-label="Default select example">
-			<option selected>선택해주세요</option>
-			<option>question 1</option>
-			<option>question 2</option>
-			<option>question 3</option>
-			<option>question 4</option>
-			<option>question 5</option></select></div></div>
-			
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Password Hint Answer</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="" placeholder="비밀번호 힌트 답"></div>
-		
-		</div>
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Date of Birth</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="date" id="" name="Birth" placeholder="000000"></div>
-			
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Gender</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="radio" class="btn-check" name="options-outlined1" id="man" autocomplete="off">
-			<label class="btn btn-outline-dark" for="man">남자</label>
-			<input type="radio" class="btn-check" name="options-outlined1" id="woman" autocomplete="off">
-			<label class="btn btn-outline-dark" for="woman">여자</label>
-			<input type="radio" class="btn-check" name="options-outlined1" id="etc" autocomplete="off">
-			<label class="btn btn-outline-dark" for="etc">기타</label></div>
-					
-		</div>
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Address</label></div>
-			<div class="col-12 col-sm-8 col-lg-4">
-			<div class="input-group">
-			<input type="text" class="form-control" id="address" placeholder="주소를 입력해주세요">
-			<button class="btn btn-outline-dark" type="button" id="button-addon1" data-bs-toggle="modal" data-bs-target="#exampleModal">주소 찾기</button>
-<!--MODAL -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">				
-			<div class="modal-content">				
-			<div class="modal-header">					
-			<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>						
-			<button type="button" class="btn-close"	data-bs-dismiss="modal" aria-label="Close"></button></div>						
-			<div class="modal-body">
-			<h3 style="text-align: center">주소 검색</h3>													
-			<br> <br>								
-			<div class="input-group mb-3">						
-			<input class="form-control" type="text"	placeholder="주소 입력">						
-			<br>							
-			<a href="https://map.naver.com/v5" class="btn btn-outline-secondary" role="button" id="button-addon2">검색</a></div>
-			<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
-			<p>예) 건물명 : 방배동 우성아파트</p>
-			<p>도로명 : 테헤란로 152</p>
-			<p>지역번 : 역삼동 737</p></div>																
-			<div class="modal-footer">															
-			<button type="button" class="btn btn-secondary"	data-bs-dismiss="modal">닫기</button>							
-			<button type="button" class="btn btn-primary">확인</button></div>	</div></div></div>
-<!-- MODAL END -->
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown </a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Something else
+										here</a></li>
+							</ul></li>
+						<li class="nav-item"><a class="nav-link disabled">Disabled</a>
+						</li>
+					</ul>
+					<div style="text-align: right;">
+						<div class="input-group">
+							<input class="form-control me-2" type="search"
+								placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<input type="text" class="form-control" id="address" placeholder="상세 주소"></div>										
+		</nav>
+		<div class="container">
 
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Nationality</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><select class="form-select" aria-label="Default select example">
-			<option value="choose">선택해주세요</option>
-			<option value="korea">한국</option>
-			<option value="usa">미국</option>
-			<option value="france">프랑스</option>
-			<option value="uk">영국</option>
-			<option value="germany">독일</option>
-			<option value="japan">일본</option>
-			<option value="italia">이탈리아</option>
-			<option value="canada">캐나다</option></select>
-			<input type="text" class="form-control" id="address" placeholder="그 외 국가 직접 입력"></div>
-		
-		</div>
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">TEL(Mobile)</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><div class="input-group">
-			<select class="form-select form-select-sm" aria-label="Default select example">
-			<option selected>통신사</option>
-			<option>SKT</option>
-			<option>KT</option>
-			<option>Uplus</option>
-			<option>알뜰폰</option>
-			</select>
-			<input type="text" class="form-control" id="mobile" placeholder="'-'포함"></div></div>	
-			
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">TEL(Fax)</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="fax" placeholder="'-'포함"></div>
-		
-		</div>
-	
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">E-mail</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><div class="input-group">
-			<input type="text" class="form-control" id="email" placeholder="이메일">
-			<span class="input-group-text">@</span>
-			<select class="form-select"aria-label="Default select example">						
-			<option value="server" selected>선택해주세요
-			<option value="Gmail">gmail.com
-			<option value="Naver">naver.com
-			<option value="Daum">hanmail.net</select></div></div>
-						
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Personal Website</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="homepage" placeholder="주소를 입력해주세요"></div>
-		
-		</div>
-	
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Occupation</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="occupation" placeholder="직업"></div>
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Favorite Color</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="color" class="form-control form-control-color" id="favColor" value="#FF8200"></div>
-		
-		</div>
-	
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Marital Status</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><div class="input-group">
-			<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-			<label class="form-check-label" for="flexSwitchCheckDefault">&nbsp;미혼</label></div>&nbsp;&nbsp;
-			<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-			<label class="form-check-label" for="flexSwitchCheckDefault">&nbsp;기혼</label></div></div></div>
-					
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Anniversary</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><div class="input-group">
-			<input type="date" id="" name="anniversary" placeholder="000000">&nbsp;&nbsp;
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-			<label class="form-check-label" for="flexCheckDefault">해당없음</label></div></div></div>
-		
-		</div>
-	
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Child</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><div class="input-group">
-			<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-			<label class="form-check-label" for="flexSwitchCheckDefault">&nbsp;유자녀</label></div>&nbsp;&nbsp;
-			<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-	 		<label class="form-check-label" for="flexSwitchCheckDefault">&nbsp;무자녀</label></div></div></div>
-							
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Reference</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><input type="text" class="form-control" id="reference" placeholder="추천인"></div>
-		
-		</div>
-	
-	
-		<div class="row">
-		
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Hobby</label></div>
-			<div class="col-12 col-sm-8 col-lg-4">
-			<div class="input-group">
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 수집 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 인테리어 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 재태크 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 사진촬영 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 골프 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 공예 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 스킨스쿠버 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 베이킹 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 요리 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 악기연주 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 핸드드립 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 꽃꽂이 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 그림 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 와인 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 식물기르기 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 영화보기 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> <label class="form-check-label" for="flexCheckChecked"> 드라이브 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> <label class="form-check-label" for="flexCheckChecked"> 캠핑 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 요가 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 유튜브제작 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 바이크 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> 테니스 </label></div>
-			<div class="form-check">
-			<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"> <label class="form-check-label" for="flexCheckChecked"> 등산 </label></div></div></div>
-			
-			<div class="col-12 col-sm-4 col-lg-2"><label for="formFile" class="form-label">Cover Letter</label></div>
-			<div class="col-12 col-sm-8 col-lg-4"><textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="간단한 자기소개 부탁드립니다"></textarea></div>
-		
-		</div>
-			<hr>
-			<div class="col-12"><label for="formFile" class="form-label">프로젝트 참여 1</label></div>
 			<div class="row">
-			<div class="form-floating col-sm-6">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="프로젝트명">
- 			<label for="floatingInput">프로젝트명</label></div>
-			<div class="form-floating col-sm-3">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 시작</label>
- 			<div id="HelpBlock" class="form-text">0000년00월</div></div>
- 			<div class="form-floating col-sm-3">
- 			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 종료</label></div>
- 			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="역할">
-			<label for="floatingPassword">역할</label></div>
-			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="발주사">
-			<label for="floatingPassword">발주사</label></div></div>
-	
-			<hr>
-			<div class="col-12"><label for="formFile" class="form-label">프로젝트 참여 2</label></div>
-			<div class="row">
-			<div class="form-floating col-sm-6">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="프로젝트명">
- 			<label for="floatingInput">프로젝트명</label></div>
-			<div class="form-floating col-sm-3">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 시작</label>
- 			<div id="HelpBlock" class="form-text">0000년00월</div></div>
- 			<div class="form-floating col-sm-3">
- 			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 종료</label></div>
- 			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="역할">
-			<label for="floatingPassword">역할</label></div>
-			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="발주사">
-			<label for="floatingPassword">발주사</label></div></div>
-	
-			<hr>
-			<div class="col-12"><label for="formFile" class="form-label">프로젝트 참여 3</label></div>
-			<div class="row">
-			<div class="form-floating col-sm-6">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="프로젝트명">
- 			<label for="floatingInput">프로젝트명</label></div>
-			<div class="form-floating col-sm-3">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 시작</label>
- 			<div id="HelpBlock" class="form-text">0000년00월</div></div>
- 			<div class="form-floating col-sm-3">
- 			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 종료</label></div>
- 			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="역할">
-			<label for="floatingPassword">역할</label></div>
-			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="발주사">
-			<label for="floatingPassword">발주사</label></div></div>
-	
-			<hr>
-			<div class="col-12"><label for="formFile" class="form-label">프로젝트 참여 4</label></div>
-			<div class="row">
-			<div class="form-floating col-sm-6">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="프로젝트명">
- 			<label for="floatingInput">프로젝트명</label></div>
-			<div class="form-floating col-sm-3">
-  			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 시작</label>
- 			<div id="HelpBlock" class="form-text">0000년00월</div></div>
- 			<div class="form-floating col-sm-3">
- 			<input type="text" class="form-control" id="floatingInput" placeholder="참여기간">
- 			<label for="floatingInput">프로젝트 종료</label></div>
- 			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="역할">
-			<label for="floatingPassword">역할</label></div>
-			<div class="form-floating col-sm-6">
-			<input type="text" class="form-control" id="floatingInput" placeholder="발주사">
-			<label for="floatingPassword">발주사</label></div></div>
-			<hr>
-	</div>
 
-</form>		
-	
-	<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js">
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">이름</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id="" placeholder="이름">
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">아이디</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id="" placeholder="아이디">
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">SNS</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<select class="form-select" aria-label="Default select example">
+						<option selected>선택해주세요</option>
+						<option>X</option>
+						<option>인스타그램</option>
+						<option>페이스북</option>
+						<option>트위터</option>
+					</select>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">SNS URL</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id="sns_url"
+						placeholder="주소를 입력해주세요">
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">비밀번호</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="password" id="" class="form-control"
+						aria-describedby="passwordHelpBlock" placeholder="비밀번호">
+					<div id="passwordHelpBlock" class="form-text">8-20자리의 영문
+						대소문자, 숫자, 특수문자를 조합하여 설정</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">비밀번호 확인</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="password" id="" class="form-control"
+						aria-describedby="passwordHelpBlock" placeholder="비밀번호 확인">
+					<div id="passwordHelpBlock" class="form-text"></div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">비밀번호 질문</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="mb-3">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>선택해주세요</option>
+							<option>question 1</option>
+							<option>question 2</option>
+							<option>question 3</option>
+							<option>question 4</option>
+							<option>question 5</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">비밀번호 답변</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id=""
+						placeholder="비밀번호 힌트 답">
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">생년월일</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="date" id="" name="Birth" placeholder="000000">
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">성별</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="radio" class="btn-check" name="options-outlined1"
+						id="man" autocomplete="off"> <label
+						class="btn btn-outline-dark" for="man">남자</label> <input
+						type="radio" class="btn-check" name="options-outlined1" id="woman"
+						autocomplete="off"> <label class="btn btn-outline-dark"
+						for="woman">여자</label> <input type="radio" class="btn-check"
+						name="options-outlined1" id="etc" autocomplete="off"> <label
+						class="btn btn-outline-dark" for="etc">기타</label>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">주소</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="input-group">
+						<input type="text" class="form-control" id="address"
+							placeholder="주소를 입력해주세요">
+						<button class="btn btn-outline-dark" type="button"
+							id="button-addon1" data-bs-toggle="modal"
+							data-bs-target="#exampleModal">주소 찾기</button>
+						<!--MODAL -->
+						<div class="modal fade" id="exampleModal" tabindex="-1"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>
+										<button type="button" class="btn-close"
+											data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h3 style="text-align: center">주소 검색</h3>
+										<br> <br>
+										<div class="input-group mb-3">
+											<input class="form-control" type="text" placeholder="주소 입력">
+											<br> <a href="https://map.naver.com/v5"
+												class="btn btn-outline-secondary" role="button"
+												id="button-addon2">검색</a>
+										</div>
+										<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
+										<p>예) 건물명 : 방배동 우성아파트</p>
+										<p>도로명 : 테헤란로 152</p>
+										<p>지역번 : 역삼동 737</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">닫기</button>
+										<button type="button" class="btn btn-primary">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- MODAL END -->
+					</div>
+					<input type="text" class="form-control" id="address"
+						placeholder="상세 주소">
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">국적</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<select class="form-select" aria-label="Default select example">
+						<option value="choose">선택해주세요</option>
+						<option value="korea">한국</option>
+						<option value="usa">미국</option>
+						<option value="france">프랑스</option>
+						<option value="uk">영국</option>
+						<option value="germany">독일</option>
+						<option value="japan">일본</option>
+						<option value="italia">이탈리아</option>
+						<option value="canada">캐나다</option>
+					</select> <input type="text" class="form-control" id="address"
+						placeholder="그 외 국가 직접 입력">
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">휴대전화</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="input-group">
+						<select class="form-select form-select-sm"
+							aria-label="Default select example">
+							<option selected>통신사</option>
+							<option>SKT</option>
+							<option>KT</option>
+							<option>Uplus</option>
+							<option>알뜰폰</option>
+						</select> <input type="text" class="form-control" id="mobile"
+							placeholder="'-'제외">
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">팩스</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id="fax"
+						placeholder="'-'제외">
+				</div>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">이메일</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="input-group">
+						<input type="text" class="form-control" id="email"
+							placeholder="이메일"> <span class="input-group-text">@</span>
+						<select class="form-select" aria-label="Default select example">
+							<option value="server" selected>선택해주세요
+							<option value="Gmail">gmail.com
+							<option value="Naver">naver.com
+							<option value="Daum">hanmail.net
+						</select>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">개인 홈페이지</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id="homepage"
+						placeholder="주소를 입력해주세요">
+				</div>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">직업</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id="occupation"
+						placeholder="직업">
+				</div>
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">선호하는 색상</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="color" class="form-control form-control-color"
+						id="favColor" value="#FF8200">
+				</div>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">결혼유무</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="input-group">
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;미혼</label>
+						</div>
+						&nbsp;&nbsp;
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;기혼</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">기념일</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="input-group">
+						<input type="date" id="" name="anniversary" placeholder="000000">&nbsp;&nbsp;
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault">해당없음</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">자녀유무</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="input-group">
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;유자녀</label>
+						</div>
+						&nbsp;&nbsp;
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;무자녀</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">추천인</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<input type="text" class="form-control" id="reference"
+						placeholder="추천인">
+				</div>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">취미</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<div class="input-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 수집 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 인테리어 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 재태크 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 사진촬영 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 골프 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 공예 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 스킨스쿠버 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 베이킹 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 요리 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 악기연주 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 핸드드립 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 꽃꽂이 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 그림 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 와인 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 식물기르기 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 영화보기 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckChecked"> <label class="form-check-label"
+								for="flexCheckChecked"> 드라이브 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckChecked"> <label class="form-check-label"
+								for="flexCheckChecked"> 캠핑 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 요가 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 유튜브제작 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 바이크 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 테니스 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckChecked"> <label class="form-check-label"
+								for="flexCheckChecked"> 등산 </label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">자기소개</label>
+				</div>
+				<div class="col-12 col-sm-8 col-lg-4">
+					<textarea class="form-control" id="exampleFormControlTextarea1"
+						rows="10" placeholder="간단한 자기소개 부탁드립니다"></textarea>
+				</div>
+
+			</div>
+			<hr>
+			<div class="col-12">
+				<label for="formFile" class="form-label">프로젝트 참여 1</label>
+			</div>
+			<div class="row">
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="프로젝트명"> <label for="floatingInput">프로젝트명</label>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						시작</label>
+					<div id="HelpBlock" class="form-text">0000년00월</div>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						종료</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="역할"> <label for="floatingPassword">역할</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="발주사"> <label for="floatingPassword">발주사</label>
+				</div>
+			</div>
+
+			<hr>
+			<div class="col-12">
+				<label for="formFile" class="form-label">프로젝트 참여 2</label>
+			</div>
+			<div class="row">
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="프로젝트명"> <label for="floatingInput">프로젝트명</label>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						시작</label>
+					<div id="HelpBlock" class="form-text">0000년00월</div>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						종료</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="역할"> <label for="floatingPassword">역할</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="발주사"> <label for="floatingPassword">발주사</label>
+				</div>
+			</div>
+
+			<hr>
+			<div class="col-12">
+				<label for="formFile" class="form-label">프로젝트 참여 3</label>
+			</div>
+			<div class="row">
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="프로젝트명"> <label for="floatingInput">프로젝트명</label>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						시작</label>
+					<div id="HelpBlock" class="form-text">0000년00월</div>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						종료</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="역할"> <label for="floatingPassword">역할</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="발주사"> <label for="floatingPassword">발주사</label>
+				</div>
+			</div>
+
+			<hr>
+			<div class="col-12">
+				<label for="formFile" class="form-label">프로젝트 참여 4</label>
+			</div>
+			<div class="row">
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="프로젝트명"> <label for="floatingInput">프로젝트명</label>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						시작</label>
+					<div id="HelpBlock" class="form-text">0000년00월</div>
+				</div>
+				<div class="form-floating col-sm-3">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="참여기간"> <label for="floatingInput">프로젝트
+						종료</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="역할"> <label for="floatingPassword">역할</label>
+				</div>
+				<div class="form-floating col-sm-6">
+					<input type="text" class="form-control" id="floatingInput"
+						placeholder="발주사"> <label for="floatingPassword">발주사</label>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-12">
+					<label for="formFile" class="form-label">수신동의</label>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">모바일 수신동의</label>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<div class="input-group">
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;동의</label>
+						</div>
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;비동의</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">이메일 수신동의</label>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<div class="input-group">
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;동의</label>
+						</div>
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;비동의</label>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">PUSH 수신동의</label>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<div class="input-group">
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;동의</label>
+						</div>
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch"
+								id="flexSwitchCheckDefault"> <label
+								class="form-check-label" for="flexSwitchCheckDefault">&nbsp;비동의</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<label for="formFile" class="form-label">개인정보 유효기간</label>
+				</div>
+
+				<div class="col-12 col-sm-4 col-lg-2">
+					<div class="form-check">
+						<input class="form-check-input" type="radio"
+							name="flexRadioDefault" id="flexRadioDefault1"> <label
+							class="form-check-label" for="flexRadioDefault1"> 1년 </label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio"
+							name="flexRadioDefault" id="flexRadioDefault1"> <label
+							class="form-check-label" for="flexRadioDefault1"> 3년 </label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio"
+							name="flexRadioDefault" id="flexRadioDefault1"> <label
+							class="form-check-label" for="flexRadioDefault1"> 5년 </label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio"
+							name="flexRadioDefault" id="flexRadioDefault1"> <label
+							class="form-check-label" for="flexRadioDefault1"> 10년 </label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio"
+							name="flexRadioDefault" id="flexRadioDefault1"> <label
+							class="form-check-label" for="flexRadioDefault1"> 평생 </label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</form>
+
+	<script
+		src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js">
 		
 	</script>
 </body>
