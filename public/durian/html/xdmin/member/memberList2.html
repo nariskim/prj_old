@@ -8,250 +8,140 @@
 	rel="stylesheet">
 <script src="https://kit.fontawesome.com/893e1f7eb8.js"
 	crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Roboto&display=swap"
-	rel="stylesheet">
+	rel="stylesheet"> -->
 <style type="text/css">
-body {
-	font-family: 'Noto Sans KR', sans-serif;
-	font-family: 'Roboto', sans-serif;
-}
-
 .sidebar {
 	height: 100vh;
-	background: liner-gradient(white);
+	background: linear-gradient(#e66465, #9198e5);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: 5px 7px 25px black;
-
+	box-shadow: 5px 7px 25px #999;
 }
 
 .bottom-border {
-	border-bottom: 2px groove black;
+	border-bottom: 2px groove #eee;
 }
 
 .sidebar-link {
-	transition: all .4s;
+transition : all .4s;
+
 }
 
 .sidebar-link:hover {
-	background-color: orange;
-	border-radius: 5px;
+background-color : #444;
+border-radius : 5px;
 }
 
 .current {
-	background-color: orange;
-	border-radius: 7px;
-	box-shadow: 2px 5px 10px lightgreen;
+background-color : #f44336;
+border-radius : 7px;
+box-shadow : 2px 5px 10px #444;
 }
 
 .current:hover {
-	background-color: orange;
-	border-radius: 7px;
-	box-shadow: 2px 5px 10px lightgreen;
-	transform: translateY(-1px);
+background-color : f66436;
+border-radius : 7px;
+box-shadow : 2px 5px 20px #444;
+transform : translateY(-1px);
 }
-
-.search-input {
-	background: transparent;
-	border: none;
-	border-radius: 0;
-	border-bottom: 2px solid black;
-	transition: all .4s;
-}
-
-.search-input:focus {
-	background: transparent;
-	box-shadow: none;
-	border-bottom: 2px solid orange;
-}
-
-.search-button {
-	border-radius: 50%;
-	padding: 10px 16px;
-	transition: all .4s;
-}
-
-.search-button:hover {
-	background-color: white;
-	transform: translateY(-1px);
-}
-
-.icon-parent {
-	position: relative;
-}
-
-.icon-bullet:after {
-	content: "";
-	position: absolute;
-	top: 7px;
-	left: 15px;
-	height: 12px;
-	width: 12px;
-	background-color: red;
-	border-radius: 50%;
-}
-
-.table-wrapper {
-	overflow: auto;
-	table-layout:fixed;
-}
-
-.container {
-	justify-content: center; /* 수평 정렬 */
-	align-items: center; /* 수직 정렬 */
-	margin-top: 5%;
-	margin-left: 15%;
-	margin-right: 15%;
-	width: auto;
-	height: auto;
-	color: black;
-	
-	
-	
-}
-
-.aaa {
-	margin-bottom: 15%;
-}
-
-ul {
-	justify-content: center;
-}
-
-/* @media ( max-width : 768px) {
-	.sidebar {
-		position: static;
-		height: auto;
-	}
-	.top-navbar {
-		position: static;
-	}
-} */
 </style>
 <title>DurianForm</title>
 </head>
 <body>
-<!-- navbar -->
-	<nav class="navbar navbar-expand-md navbar-dark">
-		<button class="navbar-toggler ml-auto mb-2 bg-dark" type="button"
-			data-toggler="collapse" data-target="#sidebar">
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-legendary">
+		
+		<button class="navbar-toggler ml-auto mb-2 bg-legendary" type="button"
+			data-toggle="collapse" data-target="#sidebar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="sidebar">
-
 			<div class="container-fluid">
 				<div class="row">
 
-
 					<!-- sidebar -->
-
-					<div class="col-xl-2 col-lg-3 col-md-3 sidebar fixed-top">
+					<div class="col-lg-3 sidebar fixed-top">
 						<a href="#"
-							class="navbar-brand text-dark text-center d-block  mx-auto py-3 mb-4 bottom-border">OliveYoung</a>
+							class="navbar-brand text-white text-center d-block mx-auto ph-3 mb-4 bottom-border">AlliveYOUNG</a>
 						<div class="bottom-border ph-3">
-							
-							<a href="#" class="text-dark">Nari Kim</a>
+							<img src="../../../images/xdmin/green.png" alt="" width="50" class="rounded-circle mr-3">
+							<a href="#" class="text-white">Nari Kim</a>
 						</div>
 						<ul class="navbar-nav flex-column mt-4">
+
 							<!-- Dashboard -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 current"> <i
-									class="fas fa-home text-dark fg-lg mr-3"></i>Dashboard
+								class="nav-link text-white p-3 mb-2 current"> <i
+									class="fas fa-home text-white fa-lg mr-3">Dashboard</i>
 							</a></li>
 							<!-- Profile -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-user text-dark fg-lg mr-3"></i>Profile
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-user text-white fa-lg mr-3">Profile</i>
 							</a></li>
 							<!-- Inbox -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-envelope text-dark fg-lg mr-3"></i>Inbox
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-envelope text-white fa-lg mr-3">Inbox</i>
 							</a></li>
 							<!-- Sales -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-shopping-cart text-dark fg-lg mr-3"></i>Sales
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-shopping-cart text-white fa-lg mr-3">Sales</i>
 							</a></li>
 							<!-- Analytics -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-chart-line text-dark fg-lg mr-3"></i>Analytics
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-chart-line text-white fa-lg mr-3">Analytics</i>
+							</a></li>
+							<!-- Charts -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-chart-bar text-white fa-lg mr-3">Charts</i>
 							</a></li>
 							<!-- Tables -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-table text-dark fg-lg mr-3"></i>Tables
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-table text-white fa-lg mr-3">Tables</i>
 							</a></li>
 							<!-- Settings -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-wrench text-dark fg-lg mr-3"></i>Settings
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-wrench text-white fa-lg mr-3">Settings</i>
 							</a></li>
 							<!-- Documentations -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-file-alt text-dark fg-lg mr-3"></i>Documentation
+								class="nav-link text-white p-3 mb-2 sidebar-link"> <i
+									class="fas fa-file-alt text-white fa-lg mr-3">Documentations</i>
 							</a></li>
 						</ul>
 					</div>
-				</div>
-
-				<!-- end of sidebar -->
+					<!-- end of sidebar -->
 
 
-				<!-- top navbar -->
-
-				<div
-					class="col-xl-10 col-lg-9 col-md-9 ml-auto bg-light fixed-top py-2 top-navbar">
-					<div class="row align-item-center">
-						<div class="col-4">
-							<img src="../../../images/xdmin/oy_lg2.jpg" alt="" width="390px">
-						</div>
-						<div class="col-5">
-							<form action="" method="post" id="" name=""
-								enctype="multipart/form-data">
-								<div class="input-group">
-									<input type="text" class="form-control search-input"
-										placeholder="Search...">
-									<button type="button" class="btn btn-dark search-button">
-										<i class="fas fa-search text-danger"></i>
-									</button>
-								</div>
-							</form>
-						</div>
-						<div class="col-md-3">
-							<ul class="navbar-nav">
-								<li class="nav-item icon-parent"><a href="#"
-									class="nav-link icon-bullet"><i
-										class="fas fa-comments text-muted fa-lg"></i></a></li>
-								<li class="nav-item icon-parent"><a href="#"
-									class="nav-link icon-bullet"><i
-										class="fas fa-bell text-muted fa-lg"></i></a></li>
-								<li class="nav-item ml-auto"><a href="#" class="nav-link"><i
-										class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
-							</ul>
-						</div>
+					<!-- top navbar -->
+					<div class="col-lg-9">
+					
+					
 					</div>
+					<!-- end of top navbar -->
+
+
 				</div>
-				<!-- end of top navbar -->
 			</div>
 		</div>
 	</nav>
-
-
-
-
 	<!-- end of navbar -->
 
-	
 
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<!-- 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button"
@@ -289,7 +179,7 @@ ul {
 			</div>
 		</div>
 	</nav>
-
+ -->
 	<div class="bbb">
 		<div class="container">
 			<div class="row gx-2 gy-2">
