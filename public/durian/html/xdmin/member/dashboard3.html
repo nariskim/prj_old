@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Durian_List_Nari</title>
+
+
+<link
+	href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+
+<script src="https://kit.fontawesome.com/893e1f7eb8.js"
+	crossorigin="anonymous"></script>
+
+
+
+<style type="text/css">
+.bottom-border {
+	border-bottom: 2px groove black;
+}
+
+.sidebar-link {
+	transition: all .4s;
+}
+
+.sidebar-link:hover {
+	background-color: orange;
+	border-radius: 5px;
+}
+
+.current {
+	background-color: orange;
+	border-radius: 7px;
+	box-shadow: 2px 5px 10px gray;
+}
+
+.current:hover {
+	background-color: orange;
+	border-radius: 7px;
+	box-shadow: 2px 5px 10px gray;
+	transform: translateY(-1px);
+}
+
+.search-input {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid black;
+	transition: all .4s;
+}
+
+.search-input:focus {
+	background: transparent;
+	box-shadow: none;
+	border-bottom: 2px solid orange;
+}
+
+.search-button {
+	border-radius: 50%;
+	padding: 10px 16px;
+	transition: all .4s;
+}
+
+.search-button:hover {
+	background-color: white;
+	transform: translateY(-1px);
+}
+
+.icon-parent {
+	position: relative;
+}
+
+.icon-bullet:after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 15px;
+	height: 12px;
+	width: 12px;
+	background-color: red;
+	border-radius: 50%;
+}
+
+.table-wrapper {
+	overflow: auto;
+}
+
+.container {
+	justify-content: center; /* 수평 정렬 */
+	align-items: center; /* 수직 정렬 */
+	width: auto;
+	height: auto;
+	color: black;
+}
+
+.aaa {
+	margin-bottom: 15%;
+}
+
+.pagination {
+	justify-content: center;
+}
+
+.ccc {
+	display: inline;
+}
+</style>
+</head>
+<body>
+	<form action="" method="post" id="" name=""
+		enctype="multipart/form-data">
+
+
+		<div class="row">
+			<header class="navbar navbar-dark sticky-top bg-dark ml-auto">
+
+				<div class="col-auto col-sm-5">
+					<a class="navbar-brand me-0 px-3" href="#">All Live Young </a>
+				</div>
+								<div class="col-auto d-md-none">
+					
+			<div class="container-fluid">
+				<button class="navbar-toggler position-relative d-md-none collapsed"
+					type="button" data-bs-toggle="collapse"
+					data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+			</div>
+			
+		
+		</div>
+				<div class="col-6 col-sm-3">
+
+					<input type="text" class="form-control me-2 search-input"
+						placeholder="Search...">
+				</div>
+				<div class="col-6 col-sm-1">
+					<button type="button" class="btn btn-dark search-button">
+						<i class="fas fa-search text-danger"></i>
+					</button>
+
+				</div>
+				<div class="col-auto col-sm-3">
+
+					<ul class="nav">
+						<li class="nav-item icon-parent"><a href="#"
+							class="nav-link icon-bullet"><i
+								class="fas fa-comments text-muted fa-lg"></i></a></li>
+
+
+						<li class="nav-item icon-parent"><a href="#"
+							class="nav-link icon-bullet"><i
+								class="fas fa-bell text-muted fa-lg"></i></a></li>
+
+						<li class="nav-item ml-auto"><a href="#" class="nav-link"><i
+								class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+					</ul>
+				</div>
+	
+
+			</header>
+		</div>
+
+	
+
+
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav id="sidebarMenu"
+					class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse show">
+					<div class="position-sticky pt-3">
+						<ul class="navbar-nav flex-column mt-4">
+							<!-- Dashboard -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 current"> <i
+									class="fas fa-home text-dark fg-lg mr-3"></i>Dashboard
+							</a></li>
+							<!-- Profile -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-user text-dark fg-lg mr-3"></i>Profile
+							</a></li>
+							<!-- Inbox -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-envelope text-dark fg-lg mr-3"></i>Inbox
+							</a></li>
+							<!-- Sales -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-shopping-cart text-dark fg-lg mr-3"></i>Sales
+							</a></li>
+							<!-- Analytics -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-chart-line text-dark fg-lg mr-3"></i>Analytics
+							</a></li>
+							<!-- Tables -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-table text-dark fg-lg mr-3"></i>Tables
+							</a></li>
+							<!-- Settings -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-wrench text-dark fg-lg mr-3"></i>Settings
+							</a></li>
+							<!-- Documentations -->
+							<li class="nav-item"><a href="#"
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-file-alt text-dark fg-lg mr-3"></i>Documentation
+							</a></li>
+						</ul>
+
+					</div>
+				</nav>
+
+				<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+					<br>
+					<div class="container">
+		<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">홈</a></li>
+    <li class="breadcrumb-item"><a href="#">회원관리</a></li>
+    <li class="breadcrumb-item active" aria-current="page">회원가입</li>
+  </ol>
+</nav><br><br>
+		
+
+<form action="" method="post" id="" name=""
+		enctype="multipart/form-data">
+
+		<table class="table table-striped table-hover">
+
+			<tr>
+
+				<td rowspan="4"><img src="../images/dia.jpeg"
+					class="rounded mx-auto d-block" alt="..." width="300px"></td>
+				<th><div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">아이디</label>
+						<input type="text" class="form-control"
+							id="exampleFormControlInput1" value="rhdeee">
+					</div></th>
+
+				<th><label for="inputPassword5" class="form-label">비밀번호</label>
+					<input type="password" id="inputPassword5" class="form-control"
+					aria-describedby="passwordHelpBlock" value="*********">
+					<div id="passwordHelpBlock" class="form-text">8-20자리의 영문
+						대소문자, 숫자, 특수문자를 조합하여 설정</div></th>
+			</tr>
+
+			<tr>
+
+				<th><label for="exampleFormControlInput1" class="form-label">이름</label>
+					<div class="input-group">
+						<input type="text" aria-label="First name" class="form-control"
+							value="김"> <input type="text" aria-label="Last name"
+							class="form-control" value="나나">
+					</div></th>
+
+				<th><label for="exampleFormControlInput3" class="form-label">생일</label>
+					<br> <input type="date" id="" name="Birth" value="2003-03-13"></th>
+
+			</tr>
+
+			<tr>
+
+				<th><label for="exampleFormControlInput1" class="form-label">성별</label>
+					<br> <input type="radio" class="btn-check"
+					name="options-outlined1" id="man" autocomplete="off"> <label
+					class="btn btn-outline-dark" for="man">남자</label> <input
+					type="radio" class="btn-check" name="options-outlined1" id="woman"
+					autocomplete="off" checked> <label
+					class="btn btn-outline-dark" for="woman">여자</label> <input
+					type="radio" class="btn-check" name="options-outlined1" id="etc"
+					autocomplete="off"> <label class="btn btn-outline-dark"
+					for="etc">기타</label></th>
+
+				<th>국적<select class="form-select"
+					aria-label="Default select example">
+						<option value="korea" selected>한국</option>
+						<option value="usa">미국</option>
+						<option value="france">프랑스</option>
+						<option value="uk">영국</option>
+						<option value="germany">독일</option>
+						<option value="japan">일본</option>
+						<option value="italia">이탈리아</option>
+						<option value="canada">캐나다</option>
+
+				</select></th>
+
+			</tr>
+
+			<tr>
+
+				<th><label for="exampleFormControlInput1" class="form-label">주소</label>
+					<div class="input-group">
+						<input type="text" class="form-control"
+							id="exampleFormControlInput1" value="뉴욕">
+						<button class="btn btn-outline-dark" type="button"
+							id="button-addon1" data-bs-toggle="modal"
+							data-bs-target="#exampleModal">주소 찾기</button>
+						<!--MODAL -->
+						<div class="modal fade" id="exampleModal" tabindex="-1"
+							aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>
+										<button type="button" class="btn-close"
+											data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h3 style="text-align: center">주소 검색</h3>
+										<br> <br>
+										<div class="input-group mb-3">
+											<input class="form-control form-control-lg" type="text"
+												placeholder="주소 입력"> <br> <a
+												href="https://map.naver.com/v5"
+												class="btn btn-outline-secondary" role="button"
+												id="button-addon2">검색</a>
+										</div>
+										<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
+										<p>예) 건물명 : 방배동 우성아파트</p>
+										<p>도로명 : 테헤란로 152</p>
+										<p>지역번 : 역삼동 737</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">닫기</button>
+										<button type="button" class="btn btn-primary">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- MODAL END --></th>
+
+				<th><div class="mb-3">
+						<label for="exampleFormControlInput2" class="form-label">팩스번호</label>
+						<input type="text" class="form-control"
+							id="exampleFormControlInput2" value="123-4567">
+					</div></th>
+
+			</tr>
+
+		</table>
+
+
+		<br> <br>
+
+
+
+
+
+
+
+
+		<table class="table table-striped table-hover">
+
+			<tr>
+
+				<th><label for="exampleFormControlInput3" class="form-label">모바일</label>
+					<br> <select class="form-select"
+					aria-label="Default select example">
+						<option selected>SKT</option>
+						<option>KT</option>
+						<option>Uplus</option>
+						<option>알뜰폰</option>
+				</select></th>
+				<th colspan="2"><label for="exampleFormControlInput3"
+					class="form-label"></label><input type="text" class="form-control"
+					id="exampleFormControlInput2" value="010-3333-3333"></th>
+
+				<th><input type="radio" class="btn-check"
+					name="options-outlined2" id="primary-outlined" autocomplete="off"
+					checked> <label class="btn btn-outline-dark"
+					for="primary-outlined">모바일 수신 동의</label> <input type="radio"
+					class="btn-check" name="options-outlined2" id="danger-outlined"
+					autocomplete="off"> <label class="btn btn-outline-danger"
+					for="danger-outlined">수신 비동의</label></th>
+
+			</tr>
+
+			<tr>
+
+				<th><label for="exampleFormControlInput3" class="form-label">이메일</label>
+					<br> <input type="text" class="form-control"
+					id="exampleFormControlInput3" value="rhdee"></th>
+				<th colspan="2"><label for="exampleFormControlInput3"
+					class="form-label"></label>
+					<div class="input-group">
+						@ <select class="form-select" aria-label="Default select example">
+
+							<option value="Gmail">gmail.com
+							<option value="Naver" selected>naver.com
+							<option value="Daum">hanmail.net
+						</select>
+					</div></th>
+
+				<th><label for="exampleFormControlInput3" class="form-label"></label>
+
+					<input type="radio" class="btn-check" name="options-outlined3"
+					id="primary-outlined2" autocomplete="off" checked> <label
+					class="btn btn-outline-dark" for="primary-outlined2">이메일 수신
+						동의</label> <input type="radio" class="btn-check" name="options-outlined3"
+					id="email" autocomplete="off"> <label
+					class="btn btn-outline-danger" for="email">수신 비동의</label></th>
+
+			</tr>
+
+		</table>
+
+		<br> <br> <br> <br>
+
+		<table class="table table-striped table-hover">
+
+			<tr>
+				<th><div class="mb-3">
+						<label for="exampleFormControlInput2" class="form-label">비밀번호
+							질문</label><select class="form-select" aria-label="Default select example">
+							<option>question 1</option>
+							<option>question 2</option>
+							<option selected>question 3</option>
+							<option>question 4</option>
+							<option>question 5</option>
+
+						</select>
+					</div></th>
+				<th><div class="mb-3">
+						<label for="exampleFormControlInput2" class="form-label">비밀번호
+							답변</label> <input type="text" class="form-control"
+							id="exampleFormControlInput2" value="Answer">
+					</div></th>
+
+			</tr>
+
+		</table>
+
+		<table class="table table-striped table-hover">
+
+
+			<tr>
+				<th><label for="exampleFormControlInput3" class="form-label">홈페이지</label>
+					<br> <input type="url" class="form-control"
+					id="exampleFormControlInput2" value="https://www.naver.com/"></th>
+
+				<th><label for="exampleFormControlInput3" class="form-label">SNS</label>
+					<br>
+					<div class="input-group">
+						<select class="form-select" aria-label="Default select example">
+							<option>X</option>
+							<option selected>인스타그램</option>
+							<option>페이스북</option>
+							<option>트위터</option>
+						</select> <input type="url" class="form-control"
+							id="exampleFormControlInput2" value="https://www.instagram.com/">
+					</div></th>
+
+
+
+				<th><div class="mb-3">
+						<label for="exampleFormControlInput3" class="form-label">추천인</label>
+						<input type="text" class="form-control"
+							id="exampleFormControlInput3" value="라이언">
+					</div></th>
+
+			</tr>
+		</table>
+
+		<table class="table table-striped table-hover">
+			<tr>
+				<th width="3%"></th>
+				<th><label for="exampleFormControlInput3" class="form-label">직업</label>
+					<br> <input type="text" class="form-control"
+					id="exampleFormControlInput3" value="엔지니어"></th>
+				
+				<th width="62%"><label for="exampleFormControlInput3"
+					class="form-label">취미(최소3개)</label>
+					<div class="input-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 수집 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 인테리어 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 재태크 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 사진촬영 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 골프 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 공예 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 스킨스쿠버 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 베이킹 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 요리 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 악기연주 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 핸드드립 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 꽃꽂이 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 그림 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 와인 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 식물기르기 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 영화보기 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckChecked" checked> <label class="form-check-label"
+								for="flexCheckChecked"> 드라이브 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckChecked" checked> <label class="form-check-label"
+								for="flexCheckChecked"> 캠핑 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 요가 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 유튜브제작 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 바이크 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckDefault"> <label class="form-check-label"
+								for="flexCheckDefault"> 테니스 </label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value=""
+								id="flexCheckChecked" checked> <label class="form-check-label"
+								for="flexCheckChecked"> 등산 </label>
+						</div>
+					</div></th>
+				
+				<th width="12%"><label for="exampleColorInput" class="form-label">
+						좋아하는 색 </label> <input type="color"
+					class="form-control form-control-color" id="exampleColorInput"
+					title="Choose your color" value="#FF8200"></th>
+				<th width="3%"></th>
+			</tr>
+
+		</table>
+
+		<table class="table table-striped table-hover">
+
+			<tr>
+
+
+				<th width="10%"></th>
+				<th><span class="input-group-text">결혼유무</span><br>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckDefault" checked><label
+							class="form-check-label" for="flexSwitchCheckDefault"> 미혼
+						</label>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckChecked"> <label
+							class="form-check-label" for="flexSwitchCheckChecked"> 기혼
+						</label>
+					</div></th>
+				<th width="15%"></th>
+				<th><span class="input-group-text"> 결혼기념일 </span><br>
+				<div class="input-group">
+						<input type="date" id="" name="Anniversary" placeholder="">
+						<div class="input-group"><div class="form-check">
+							<br><input class="form-check-input" type="checkbox" value=""
+								id="flexCheckChecked" checked> <label
+								class="form-check-label" for="flexCheckChecked"> 해당없음 </label>
+						</div></div>
+					</div></th>
+				<th width="15%"></th>
+				<th><span class="input-group-text">자녀유무</span><br>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckDefault"><label
+							class="form-check-label" for="flexSwitchCheckDefault"> 유
+						</label>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckChecked" checked> <label
+							class="form-check-label" for="flexSwitchCheckChecked"> 무
+						</label>
+					</div></th>
+				<th width="10%"></th>
+			</tr>
+		</table>
+
+
+
+
+
+		<br> <br>
+
+
+
+
+		<h2 style="text-align: center; color: black;">프로젝트 참여</h2>
+		<table class="table table-striped table-hover">
+
+			<tr>
+				<th><label for="exampleFormControlInput3" class="form-label">
+						번호 </label></th>
+				<th><label for="exampleFormControlInput3" class="form-label">
+						프로젝트명 </label></th>
+				<th><label for="exampleFormControlInput3" class="form-label">
+						참여기간 </label></th>
+				<th><label for="exampleFormControlInput3" class="form-label">
+						역할 </label></th>
+				<th><label for="exampleFormControlInput3" class="form-label">
+						발주사 </label></th>
+			</tr>
+
+
+			<tr>
+				<th><label for="exampleFormControlInput3" class="form-label">1</label></th>
+				<td><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="project_A"></td>
+				<td><input type="month" id="" name="month" value="2010-12">~<input
+					type="month" id="" name="month" value="2011-11"></td>
+				<th><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="a"></th>
+				<td><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="Company AA"></td>
+			</tr>
+
+			<tr>
+				<th><label for="exampleFormControlInput3" class="form-label">2</label></th>
+				<td><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="project_B"></td>
+				<td><input type="month" id="" name="month" value="2012-01">~<input
+					type="month" id="" name="month" value="2012-07"></td>
+				<th><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="b"></th>
+				<td><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="Company BB"></td>
+			</tr>
+
+			<tr>
+				<th><label for="exampleFormControlInput3" class="form-label">3</label></th>
+				<td><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="project_C"></td>
+				<td><input type="month" id="" name="month" value="2014-03">~<input
+					type="month" id="" name="month" value="2015-04"></td>
+				<th><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="c"></th>
+				<td><input type="text" class="form-control"
+					id="exampleFormControlInput1" value="Company CC"></td>
+			</tr>
+		</table>
+
+		<br> <br>
+
+
+
+		<h2 style="text-align: center; color: black;">자기소개</h2>
+		<table class="table table-striped table-hover">
+			<tr>
+				<td><textarea id="" name="textarea" rows="4" cols="100">안녕하세요. 저는 김나나입니다. 나이는 스무살이고 태어난 곳은 캐나다입니다. 하지만 국적은 한국이고 현재
+ 거주하는 곳은 뉴욕입니다. 그리고 직업은 엔지니어입니다. 잘부탁드립니다.</textarea></td>
+			</tr>
+		</table>
+
+		<br> <br>
+
+		<table class="table table-striped table-hover">
+			<tr>
+				<th><label for="exampleFormControlInput3" class="form-label">
+						개인정보 유효기간 </label> <br>
+				<input type="radio" id="" name="PersonalData" value="1yr">1년
+					<input type="radio" id="" name="PersonalData" value="3yrs">3년
+					<input type="radio" id="" name="PersonalData" value="5yrs">5년
+					<input type="radio" id="" name="PersonalData" value="10yrs" checked>10년
+
+				</th>
+
+			</tr>
+
+		</table>
+
+		<br> <br>
+
+
+
+		</div>
+					<div class="container">
+						<footer class="py-3 my-4">
+							<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+								<li class="nav-item"><a href="#"
+									class="nav-link px-2 text-muted">Home</a></li>
+								<li class="nav-item"><a href="#"
+									class="nav-link px-2 text-muted">Features</a></li>
+								<li class="nav-item"><a href="#"
+									class="nav-link px-2 text-muted">Pricing</a></li>
+								<li class="nav-item"><a href="#"
+									class="nav-link px-2 text-muted">FAQs</a></li>
+								<li class="nav-item"><a href="#"
+									class="nav-link px-2 text-muted">About</a></li>
+							</ul>
+							<p class="text-center text-muted">© 2021 All Live Young, Inc</p>
+						</footer>
+					</div>
+
+				</main>
+			</div>
+		</div>
+
+	</form>
+	<script
+		src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js">
+		
+	</script>
+
+
+
+
+</body>
+</html>
