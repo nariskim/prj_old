@@ -27,18 +27,18 @@
 }
 
 .sidebar-link:hover {
-	background-color: orange;
+	background-color: silver;
 	border-radius: 5px;
 }
 
 .current {
-	background-color: orange;
+	background-color: GreenYellow;
 	border-radius: 7px;
 	box-shadow: 2px 5px 10px gray;
 }
 
 .current:hover {
-	background-color: orange;
+	background-color: GreenYellow;
 	border-radius: 7px;
 	box-shadow: 2px 5px 10px gray;
 	transform: translateY(-1px);
@@ -55,7 +55,7 @@
 .search-input:focus {
 	background: transparent;
 	box-shadow: none;
-	border-bottom: 2px solid orange;
+	border-bottom: 2px solid GreenYellow;
 }
 
 .search-button {
@@ -65,7 +65,7 @@
 }
 
 .search-button:hover {
-	background-color: white;
+	background-color: GreenYellow;
 	transform: translateY(-1px);
 }
 
@@ -80,7 +80,7 @@
 	left: 15px;
 	height: 12px;
 	width: 12px;
-	background-color: red;
+	background-color: GreenYellow;
 	border-radius: 50%;
 }
 
@@ -115,36 +115,38 @@
 
 
 		<div class="row">
-			<header class="navbar navbar-dark sticky-top bg-dark ml-auto">
+			<header class="navbar navbar-dark sticky-top bg-light ml-auto">
 
 				<div class="col-auto col-sm-5">
-					<a class="navbar-brand me-0 px-3" href="#">All Live Young </a>
+					<h1>&nbsp&nbsp&nbspALL LIVE YOUNG</h1>
 				</div>
-								<div class="col-auto d-md-none">
-					
-			<div class="container-fluid">
-				<button class="navbar-toggler position-relative d-md-none collapsed"
-					type="button" data-bs-toggle="collapse"
-					data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				
-			</div>
-			
-		
-		</div>
-				<div class="col-6 col-sm-3">
+				<div class="col-auto d-md-none">
+
+					<div class="container-fluid">
+						<button
+							class="navbar-toggler position-relative d-md-none collapsed"
+							type="button" data-bs-toggle="collapse"
+							data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+					</div>
+
+
+				</div>
+				<div class="col-10 col-sm-3">
 
 					<input type="text" class="form-control me-2 search-input"
 						placeholder="Search...">
 				</div>
-				<div class="col-6 col-sm-1">
-					<button type="button" class="btn btn-dark search-button">
-						<i class="fas fa-search text-danger"></i>
+				<div class="col-2 col-sm-1">
+					<button type="button" class="btn btn-secondary search-button">
+						<i class="fas fa-search text-light"></i>
 					</button>
 
 				</div>
+				
 				<div class="col-auto col-sm-3">
 
 					<ul class="nav">
@@ -161,12 +163,12 @@
 								class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
 					</ul>
 				</div>
-	
+
 
 			</header>
 		</div>
 
-	
+
 
 
 
@@ -178,43 +180,49 @@
 						<ul class="navbar-nav flex-column mt-4">
 							<!-- Dashboard -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 current"> <i
-									class="fas fa-home text-dark fg-lg mr-3"></i>Dashboard
+								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
+									class="fas fa-home text-dark fg-lg mr-3"></i>&nbsp&nbsp홈
 							</a></li>
 							<!-- Profile -->
 							<li class="nav-item"><a href="#"
 								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-user text-dark fg-lg mr-3"></i>Profile
+									class="fas fa-shopping-cart text-dark fg-lg mr-3"></i>&nbsp&nbsp상품
+									등록
 							</a></li>
 							<!-- Inbox -->
 							<li class="nav-item"><a href="#"
 								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-envelope text-dark fg-lg mr-3"></i>Inbox
+									class="fas fa-truck-fast text-dark fg-lg mr-3"></i>&nbsp&nbsp주문
+									/ 배송
 							</a></li>
 							<!-- Sales -->
 							<li class="nav-item"><a href="#"
 								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-shopping-cart text-dark fg-lg mr-3"></i>Sales
+									class="fas fa-calendar-check text-dark fg-lg mr-3"></i>&nbsp&nbsp스케줄
 							</a></li>
 							<!-- Analytics -->
 							<li class="nav-item"><a href="#"
 								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-chart-line text-dark fg-lg mr-3"></i>Analytics
+									class="fas fa-chart-line text-dark fg-lg mr-3"></i>&nbsp&nbsp판매
+									현황
 							</a></li>
 							<!-- Tables -->
 							<li class="nav-item"><a href="#"
-								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-table text-dark fg-lg mr-3"></i>Tables
+								class="nav-link text-dark p-3 mb-2 current"> <i
+									class="fas fa-user fa-table text-dark fg-lg mr-3"></i>&nbsp&nbsp회원
+									관리
 							</a></li>
 							<!-- Settings -->
 							<li class="nav-item"><a href="#"
 								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-wrench text-dark fg-lg mr-3"></i>Settings
+									class="fas fa-headphones text-dark fg-lg mr-3"></i>&nbsp&nbsp고객
+									문의
 							</a></li>
 							<!-- Documentations -->
 							<li class="nav-item"><a href="#"
 								class="nav-link text-dark p-3 mb-2 sidebar-link"> <i
-									class="fas fa-file-alt text-dark fg-lg mr-3"></i>Documentation
+									class="fas fa-table fa-file-alt text-dark fg-lg mr-3"></i>&nbsp&nbsp게시판
+									관리
 							</a></li>
 						</ul>
 
@@ -225,8 +233,9 @@
 					<br>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">홈</a></li>
-							<li class="breadcrumb-item active" aria-current="page">회원관리</li>
+							<li class="breadcrumb-item"><a href="#">회원 관리</a></li>
+							<li class="breadcrumb-item active" aria-current="page">회원
+								리스트</li>
 						</ol>
 					</nav>
 					<br> <br>
@@ -236,9 +245,8 @@
 								<div class="col-12 col-sm-4 col-lg-2">
 									<select class="form-select" aria-label="Default select example">
 										<option selected>삭제여부</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
+										<option value="1">N</option>
+										<option value="2">Y</option>
 									</select>
 								</div>
 								<div class="col-12 col-sm-4 col-lg-2">
@@ -265,9 +273,8 @@
 								<div class="col-12 col-sm-4 col-lg-2">
 									<select class="form-select" aria-label="Default select example">
 										<option selected>검색구분</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
+										<option value="1">영문</option>
+										<option value="2">한글</option>
 									</select>
 								</div>
 								<div class="col-12 col-sm-4 col-lg-2">
@@ -292,8 +299,7 @@
 						</div>
 					</div>
 
-					<br>
-					<br>
+					<br> <br>
 					<div class="table-wrapper">
 						<div class="container">
 
@@ -307,11 +313,11 @@
 											</div>
 										</th>
 										<th scope="col">#</th>
-										<th scope="col">Name</th>
-										<th scope="col">Id</th>
-										<th scope="col">Gender</th>
-										<th scope="col">Phone</th>
-										<th scope="col">Email</th>
+										<th scope="col">이름</th>
+										<th scope="col">아이디</th>
+										<th scope="col">성별</th>
+										<th scope="col">연락처</th>
+										<th scope="col">이메일</th>
 
 									</tr>
 								</thead>
