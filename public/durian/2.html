@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20220511TEST</title>
+</head>
+<body>
+	<div class="form-floating mb-3" style="font-size: small;">
+		<input type="email" class="form-control" id="floatingInput"
+			placeholder="name@example.com"> <label for="floatingInput">CJ
+			ONE 통합회원 아이디 입력</label>
+	</div>
+	<div class="form-floating mb-3" style="font-size: small;">
+		<input type="password" class="form-control" id="floatingPassword"
+			placeholder="Password"> <label for="floatingPassword">비밀번호(8-12자
+			영문자+숫자+특수문자)</label>
+	</div>
+
+	<div class="d-grid gap-2">
+		<button class="btn btn-success text-white" type="button" id="btnLogin">로그인</button>
+	</div>
+	<script>
+		$("#btnLogin").on(
+				"click",
+				function() {
+					/* 	if(validation()==false) return false; */
+					if(!checkNull($("oymbId"), $.trim($("#oymbId").val()), "아이디를 확인해 주세요!")) return false;
+					if(!checkNull($("oymbPassword"), $.trim($("#oymPassword").val()), "비밀번호를 확인해 주세요!")) return false;
+					$.ajax({
+						async : true,
+						cache : false,
+						type : "post",
+						url : "/allLive/loginProc",
+						data : {
+							"oymbId" : $("#oymbId").val(),
+							"oymbPassword" : $("#oymbPassword").val()
+						},
+						success : function(response) {
+							if (response.rt == "success") {
+								location.href = "/allLive/allLiveMain";
+							} else {
+								alert("회원없음");
+							}
+						},
+						error : function(jqXHR, textStatus, errorThrown) {
+							alert("ajaxUpdate " + jqXHR.textStatus + " : "
+									+ jqXHR.errorThrown);
+						}
+					});
+				});
+</script>
+
+</body>
+
+</html>
